@@ -13,11 +13,14 @@ Packing Retrofit and makes it easier to use.
 ## Usage
 
 [Java Example](https://github.com/shichaohui/RetrofitWrapper/tree/master/app/src/main/java/com/sch/example/java)
+ and 
 [Kotlin Example](https://github.com/shichaohui/RetrofitWrapper/tree/master/app/src/main/java/com/sch/example/kotlin)
 
 ### dependencies
 
 ```
+implementation 'com.sch.retrofit:retrofit-wrapper:1.0.0'
+
 implementation 'com.squareup.retrofit2:retrofit:2.4.0'
 implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
 implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
@@ -107,11 +110,11 @@ class Request(urlParams: Int, rawParams: Int) : RawParams<Response>("api") {
 ### Create request body by [custom params](https://github.com/shichaohui/RetrofitWrapper/tree/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request)
 
 Use interface (
-[SupportUrlParams](https://github.com/shichaohui/RetrofitWrapper/blob/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/SupportUrlParams.kt)
-[SupportFormParams](https://github.com/shichaohui/RetrofitWrapper/blob/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/SupportFormParams.kt)
-[SupportRawParams](https://github.com/shichaohui/RetrofitWrapper/blob/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/SupportRawParams.kt)
-[SupportMultipartParams](https://github.com/shichaohui/RetrofitWrapper/blob/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/SupportMultipartParams.kt)
-[SupportHeaders](https://github.com/shichaohui/RetrofitWrapper/blob/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/SupportHeaders.kt)
+[SupportUrlParams](https://github.com/shichaohui/RetrofitWrapper/blob/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/SupportUrlParams.kt) 
+[SupportFormParams](https://github.com/shichaohui/RetrofitWrapper/blob/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/SupportFormParams.kt) 
+[SupportRawParams](https://github.com/shichaohui/RetrofitWrapper/blob/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/SupportRawParams.kt) 
+[SupportMultipartParams](https://github.com/shichaohui/RetrofitWrapper/blob/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/SupportMultipartParams.kt) 
+[SupportHeaders](https://github.com/shichaohui/RetrofitWrapper/blob/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/SupportHeaders.kt) 
 ) just like [inner params](https://github.com/shichaohui/RetrofitWrapper/tree/master/retrofit_wrapper/src/main/java/com/sch/retrofit/wrapper/request/params) .
 
 ## Initiate a request
