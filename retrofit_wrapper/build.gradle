@@ -36,3 +36,23 @@ dependencies {
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
 }
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.8.1'
+    }
+}
+
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'shichaohui'
+    groupId = 'com.sch.retrofit'
+    artifactId = 'retrofit-wrapper'
+    publishVersion = '1.0.0'
+    desc = 'Packing Retrofit and makes it easier to use.'
+    website = 'https://github.com/shichaohui/RetrofitWrapper.git'
+}
